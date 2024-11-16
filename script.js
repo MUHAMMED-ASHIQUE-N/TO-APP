@@ -108,7 +108,6 @@ function editTask(index, li) {
     input.className = "edit-new-input";
 
     li.replaceChild(input, currentTaskElement);
-    input.focus();
 
     input.addEventListener('blur', () => saveEdit(input, index, li));
 
